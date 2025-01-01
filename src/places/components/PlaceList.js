@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "../../shared/components/UIElements/Card";
-import { Link } from "react-router-dom";
 import './PlaceList.css';
 import PlaceItem from "./PlaceItem";
 
@@ -26,7 +25,8 @@ const PlaceList = props => {
                     description={place.description}
                     address={place.address}
                     creatorId={place.creator}
-                    coordinates={place.location}
+                    coordinates1={place.location.lat}
+                    coordinates2={place.location.lng}
                 />)}
         </ul>
     )
